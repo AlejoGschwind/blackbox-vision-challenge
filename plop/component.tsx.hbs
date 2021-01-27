@@ -1,5 +1,11 @@
 import * as React from "react";
 
-const {{pascalCase name}}: React.FC = () => <div>{`<{{pascalCase name}} />`}</div>;
+import styles from "./{{pascalCase name}}.module.scss";
+
+const {{pascalCase name}}: React.FC = () => (
+  <div className={styles.container}>
+    {`<{{pascalCase name}} />`}
+  </div>
+);
 
 export default {{pascalCase name}};

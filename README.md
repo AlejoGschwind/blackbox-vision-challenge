@@ -22,6 +22,6 @@ siguiente manera:
 * Respuesta incorrecta: *0 puntos*
 
 ## Definiciones técnicas
-* Todos los datos necesarios para el juego, están en (la siguiente API)[https://opentdb.com/api.php?amount=10]
+* Todos los datos necesarios para el juego, están en [la siguiente API](https://opentdb.com/api.php?amount=10)
 * El juego puede realizarse en React web o React Native.
 * Cada pregunta debe presentarse en una pantalla distinta de la aplicación.

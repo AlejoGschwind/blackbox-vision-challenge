@@ -1,5 +1,8 @@
 :root {
   --primary: #44D1B3;
+  --secondary: #112F41;
+  --green: #00E725;
+  --yellow: #E2E700;
   --red: #E94F4E;
 }
 
@@ -14,7 +17,7 @@ body {
 
 #root {
   text-align: center;
-  background-color: white;
+  background-color: var(--secondary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

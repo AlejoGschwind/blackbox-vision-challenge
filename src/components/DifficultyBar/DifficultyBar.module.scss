@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  width: fit-content;
+  margin: 0.2rem 0 2rem 0;
+}
+
+.leftBar {
+  height: 15px;
+  width: 50px;
+  background-color: white;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0px 2px 2px #0B1D28;
+}
+
+.centerBar {
+  height: 15px;
+  width: 50px;
+  margin: 0 0.2rem;
+  background-color: white;
+  box-shadow: 0px 2px 2px #0B1D28;
+}
+
+.rightBar {
+  height: 15px;
+  width: 50px;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 2px 2px #0B1D28;
+}
+
+.greenBar {
+  background-color: var(--green);
+}
+
+.yellowBar {
+  background-color: var(--yellow);
+}
+
+.redBar {
+  background-color: var(--red);
+}

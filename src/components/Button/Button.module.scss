@@ -26,3 +26,13 @@
   float: left;
   font-weight: 600;
 }
+
+.answered {
+  background: white;
+  cursor: initial;
+
+  &:hover, &:focus {
+    cursor: initial;
+    background: white;
+  }
+}

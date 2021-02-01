@@ -1,0 +1,10 @@
+.container {
+  width: 0w;
+  height: 5px;
+  background-color: var(--primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 10s linear -1s;
+}
+

@@ -1,10 +1,11 @@
 import * as React from "react";
 
+import {htmlDecode} from "../../helpers/htmlDecode";
 import DifficultyBar from "../DifficultyBar";
 
-import styles from "./Question.module.scss";
+import styles from "./QuestionHeader.module.scss";
 
-interface QuestionProps {
+interface QuestionHeaderProps {
   category: string;
   questionNumber: number;
   questionTotal: number;
@@ -12,15 +13,15 @@ interface QuestionProps {
   difficulty: "easy" | "medium" | "hard";
 }
 
-const Question: React.FC<QuestionProps> = (props) => (
+const QuestionHeader: React.FC<QuestionHeaderProps> = (props) => (
   <div className={styles.container}>
     <div className={styles.category}>{props.category}</div>
     <div className={styles.questionSteps}>
       {props.questionNumber} / {props.questionTotal}
     </div>
-    <h1 className={styles.question}>{props.question}</h1>
+    <h1 className={styles.question}>{htmlDecode(props.question)}</h1>
     <DifficultyBar difficulty={props.difficulty} />
   </div>
 );
 
-export default Question;
+export default QuestionHeader;

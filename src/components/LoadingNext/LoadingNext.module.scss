@@ -1,0 +1,34 @@
+.container {
+  height: 50px;
+  width: 50px;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+.fill {
+  background-color: white;
+  transition: -webkit-transform 1s;
+  transition: -ms-transform 1s;
+  transition: transform 1s;
+  border-radius: 50%;
+
+  position: absolute;
+  /* rect(<top>, <right>, <bottom>, <left>) */
+  clip: rect(0px, 25px, 50px, 0px);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}

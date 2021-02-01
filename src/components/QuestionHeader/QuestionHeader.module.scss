@@ -6,9 +6,11 @@
 }
 
 .category {
-  width: 40%;
+  min-width: 40%;
+  width: fit-content;
   height: 30px;
   margin: 1.5rem 0 1rem 0;
+  padding: 0 0.8rem;
   color: var(--secondary);
   font-size: 18px;
   background-color: var(--primary);
